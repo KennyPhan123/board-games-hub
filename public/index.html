@@ -255,18 +255,6 @@
         });
       });
     });
-
-    // Click anywhere on card (except repo button) to open game
-    cards.forEach((card) => {
-      card.style.cursor = 'pointer';
-      card.addEventListener('click', (e) => {
-        if (e.target.closest('a')) return;
-        const playLink = card.querySelector('.play-btn');
-        if (playLink) {
-          window.location.href = playLink.href;
-        }
-      });
-    });
   </script>
 </body>
 </html>
