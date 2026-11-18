@@ -12,14 +12,12 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <!-- Animated Spatial Aurora Background -->
+  <!-- Subtle Monochrome Ambient Depth & Dot Grid -->
   <div class="ambient-bg" aria-hidden="true">
-    <div class="aurora-orb orb-1"></div>
-    <div class="aurora-orb orb-2"></div>
-    <div class="aurora-orb orb-3"></div>
+    <div class="mono-orb orb-1"></div>
+    <div class="mono-orb orb-2"></div>
   </div>
   <div class="spatial-grid" aria-hidden="true"></div>
-  <div class="cursor-aura" id="cursorAura" aria-hidden="true"></div>
 
   <!-- Top right buttons: Theme toggle + GitHub repository -->
   <div class="top-actions">
@@ -48,24 +46,17 @@
 
   <main class="hub-wrapper">
     <header class="hub-header">
-      <div class="status-pill">
-        <span class="status-dot"></span>
-        <span>Multiplayer Party Arcade • 5 Games Live</span>
-      </div>
       <h1 class="hub-title">BOARD GAMES</h1>
-      <div>
-        <span class="author-credits">Một dự án của Nguyên Khang (KennyPhan)</span>
-      </div>
-      <p class="hub-subtitle">Chọn tựa game bên dưới và bấm <strong>Chơi ngay</strong> để tạo phòng chiến trực tuyến cùng bạn bè ngay trên trình duyệt.</p>
+      <div class="author-credits">Một dự án của Nguyên Khang (KennyPhan)</div>
     </header>
 
     <!-- Player Count Filter Dock -->
     <div class="filter-bar-wrap">
       <div class="filter-bar" role="group" aria-label="Lọc theo số người chơi">
         <button class="filter-btn active" data-filter="all" type="button">Tất cả (5)</button>
-        <button class="filter-btn" data-filter="2" type="button">Chơi được 2 người</button>
-        <button class="filter-btn" data-filter="3-6" type="button">Nhóm 3–6 người</button>
-        <button class="filter-btn" data-filter="7+" type="button">Nhóm đông 7+ người</button>
+        <button class="filter-btn" data-filter="2" type="button">2 người</button>
+        <button class="filter-btn" data-filter="3-6" type="button">3–6 người</button>
+        <button class="filter-btn" data-filter="7+" type="button">7+ người</button>
       </div>
     </div>
 
@@ -80,8 +71,8 @@
           <div class="card-heading">
             <h2 class="game-name">Coup</h2>
             <div class="meta-badges">
-              <span class="badge badge-players">2–6 người</span>
-              <span class="badge badge-tag">Ẩn vai · Đấu trí</span>
+              <span class="badge">2–6 người</span>
+              <span class="badge">Ẩn vai · Đấu trí</span>
             </div>
           </div>
         </div>
@@ -91,10 +82,10 @@
         <div class="card-footer">
           <a href="https://coup-online.pnk.workers.dev/" class="play-btn">
             <span>Chơi ngay</span>
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
           <a href="https://github.com/KennyPhan123/coup-online" target="_blank" rel="noopener noreferrer" class="repo-btn" title="Mã nguồn Coup Online trên GitHub" aria-label="Mã nguồn Coup Online trên GitHub">
-            <svg height="19" width="19" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+            <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
           </a>
         </div>
       </article>
@@ -108,8 +99,8 @@
           <div class="card-heading">
             <h2 class="game-name">Decrypto</h2>
             <div class="meta-badges">
-              <span class="badge badge-players">3–8+ người</span>
-              <span class="badge badge-tag">Giải mã · Đồng đội</span>
+              <span class="badge">3–8+ người</span>
+              <span class="badge">Giải mã · Đồng đội</span>
             </div>
           </div>
         </div>
@@ -119,10 +110,10 @@
         <div class="card-footer">
           <a href="https://decrypto.pnk.workers.dev/" class="play-btn">
             <span>Chơi ngay</span>
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
           <a href="https://github.com/KennyPhan123/decrypto-online" target="_blank" rel="noopener noreferrer" class="repo-btn" title="Mã nguồn Decrypto Online trên GitHub" aria-label="Mã nguồn Decrypto Online trên GitHub">
-            <svg height="19" width="19" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+            <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
           </a>
         </div>
       </article>
@@ -136,8 +127,8 @@
           <div class="card-heading">
             <h2 class="game-name">Skull</h2>
             <div class="meta-badges">
-              <span class="badge badge-players">3–6 người</span>
-              <span class="badge badge-tag">Đặt cược · Thách thức</span>
+              <span class="badge">3–6 người</span>
+              <span class="badge">Đặt cược · Thách thức</span>
             </div>
           </div>
         </div>
@@ -147,10 +138,10 @@
         <div class="card-footer">
           <a href="https://skull-online.pnk.workers.dev/" class="play-btn">
             <span>Chơi ngay</span>
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
           <a href="https://github.com/KennyPhan123/skull-online" target="_blank" rel="noopener noreferrer" class="repo-btn" title="Mã nguồn Skull Online trên GitHub" aria-label="Mã nguồn Skull Online trên GitHub">
-            <svg height="19" width="19" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+            <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
           </a>
         </div>
       </article>
@@ -164,8 +155,8 @@
           <div class="card-heading">
             <h2 class="game-name">Spicy</h2>
             <div class="meta-badges">
-              <span class="badge badge-players">2–6 người</span>
-              <span class="badge badge-tag">Đánh bài · Bắt bài</span>
+              <span class="badge">2–6 người</span>
+              <span class="badge">Đánh bài · Bắt bài</span>
             </div>
           </div>
         </div>
@@ -175,10 +166,10 @@
         <div class="card-footer">
           <a href="https://spicy-online.pnk.workers.dev/" class="play-btn">
             <span>Chơi ngay</span>
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
           <a href="https://github.com/KennyPhan123/spicy-online" target="_blank" rel="noopener noreferrer" class="repo-btn" title="Mã nguồn Spicy Online trên GitHub" aria-label="Mã nguồn Spicy Online trên GitHub">
-            <svg height="19" width="19" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+            <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
           </a>
         </div>
       </article>
@@ -192,8 +183,8 @@
           <div class="card-heading">
             <h2 class="game-name">That's Not a Hat!</h2>
             <div class="meta-badges">
-              <span class="badge badge-players">2–8 người</span>
-              <span class="badge badge-tag">Trí nhớ · Tặng quà</span>
+              <span class="badge">2–8 người</span>
+              <span class="badge">Trí nhớ · Tặng quà</span>
             </div>
           </div>
         </div>
@@ -203,22 +194,18 @@
         <div class="card-footer">
           <a href="https://thats-not-a-hat-online.pnk.workers.dev/" class="play-btn">
             <span>Chơi ngay</span>
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
           <a href="https://github.com/KennyPhan123/thats-not-a-hat-online" target="_blank" rel="noopener noreferrer" class="repo-btn" title="Mã nguồn That's Not a Hat Online trên GitHub" aria-label="Mã nguồn That's Not a Hat Online trên GitHub">
-            <svg height="19" width="19" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+            <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
           </a>
         </div>
       </article>
     </section>
-
-    <footer class="hub-footer">
-      Tất cả các game đều miễn phí • Chơi trực tiếp trên trình duyệt không cần đăng nhập
-    </footer>
   </main>
 
   <script>
-    // 1. Theme toggle (defaults to Dark Spatial Glass so glassmorphism pops best)
+    // 1. Theme toggle
     const themeToggle = document.getElementById('themeToggle');
     const moonIcon = document.getElementById('moonIcon');
     const sunIcon = document.getElementById('sunIcon');
@@ -235,23 +222,17 @@
       }
     }
 
-    const savedTheme = localStorage.getItem('hub-glass-theme') || 'dark';
+    const savedTheme = localStorage.getItem('hub-mono-theme') || 'dark';
     applyTheme(savedTheme);
 
     themeToggle.addEventListener('click', () => {
       const isLight = document.documentElement.getAttribute('data-theme') === 'light';
       const next = isLight ? 'dark' : 'light';
-      localStorage.setItem('hub-glass-theme', next);
+      localStorage.setItem('hub-mono-theme', next);
       applyTheme(next);
     });
 
-    // 2. Ambient cursor aura tracking
-    window.addEventListener('pointermove', (e) => {
-      document.documentElement.style.setProperty('--cursor-x', `${e.clientX}px`);
-      document.documentElement.style.setProperty('--cursor-y', `${e.clientY}px`);
-    });
-
-    // 3. 3D Perspective Tilt & Spotlight on each Glass Card (no card-click redirect!)
+    // 2. 3D Perspective Tilt & Monochrome Glass Glare on each Card
     const cards = document.querySelectorAll('.game-card');
 
     cards.forEach((card) => {
@@ -265,8 +246,8 @@
 
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
-        const rotateX = ((y - centerY) / centerY) * -6;
-        const rotateY = ((x - centerX) / centerX) * 6;
+        const rotateX = ((y - centerY) / centerY) * -5;
+        const rotateY = ((x - centerX) / centerX) * 5;
 
         card.style.setProperty('--rx', `${rotateX.toFixed(2)}deg`);
         card.style.setProperty('--ry', `${rotateY.toFixed(2)}deg`);
@@ -278,7 +259,7 @@
       });
     });
 
-    // 4. Smooth Player Count Filter with spring re-entry animation
+    // 3. Player Count Filter
     const filterButtons = document.querySelectorAll('.filter-btn');
 
     filterButtons.forEach((btn) => {
