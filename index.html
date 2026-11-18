@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tổng hợp 5 Board Game & Party Game trực tuyến của Nguyên Khang (KennyPhan): Coup, Decrypto, Skull, Spicy, That's Not a Hat!" />
+  <title>Board Games Online - KennyPhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./images/skull.png" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Top right buttons: Theme toggle + GitHub profile -->
+  <div class="top-actions">
+    <button id="themeToggle" class="icon-btn" type="button" title="Đổi giao diện Sáng/Tối" aria-label="Đổi giao diện Sáng/Tối">
+      <svg id="moonIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+      </svg>
+      <svg id="sunIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2"></path>
+        <path d="M12 20v2"></path>
+        <path d="m4.93 4.93 1.41 1.41"></path>
+        <path d="m17.66 17.66 1.41 1.41"></path>
+        <path d="M2 12h2"></path>
+        <path d="M20 12h2"></path>
+        <path d="m6.34 17.66-1.41 1.41"></path>
+        <path d="m19.07 4.93-1.41 1.41"></path>
+      </svg>
+    </button>
+    <a href="https://github.com/KennyPhan123" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub KennyPhan123" aria-label="GitHub KennyPhan123">
+      <svg height="22" width="22" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+      </svg>
+    </a>
+  </div>
+
+  <main class="hub-wrapper">
+    <header class="hub-header">
+      <h1 class="hub-title">BOARD GAMES</h1>
+      <div class="author-credits">Một dự án của Nguyên Khang (KennyPhan)</div>
+      <p class="hub-subtitle">Chọn một tựa game bên dưới để tạo phòng và chơi trực tuyến cùng bạn bè ngay trên trình duyệt.</p>
+    </header>
+
+    <!-- Player Count Filter -->
+    <div class="filter-bar" role="group" aria-label="Lọc theo số người chơi">
+      <button class="filter-btn active" data-filter="all" type="button">Tất cả (5)</button>
+      <button class="filter-btn" data-filter="2" type="button">Chơi được 2 người</button>
+      <button class="filter-btn" data-filter="3-6" type="button">Nhóm 3–6 người</button>
+      <button class="filter-btn" data-filter="7+" type="button">Nhóm đông 7+ người</button>
+    </div>
+
+    <!-- Games Grid -->
+    <section class="games-grid" id="gamesGrid">
+      <!-- 1. COUP -->
+      <article class="game-card" data-game="coup" data-min="2" data-max="6">
+        <div class="card-top">
+          <div class="game-thumb">
+            <img src="./images/coup.png" alt="Coup Online" loading="lazy" />
+          </div>
+          <div class="card-heading">
+            <h2 class="game-name">Coup</h2>
+            <div class="meta-badges">
+              <span class="badge badge-players">2–6 người</span>
+              <span class="badge badge-tag">Ẩn vai · Đấu trí</span>
+            </div>
+          </div>
+        </div>
+        <p class="game-desc">
+          Thao túng quyền lực, mạo danh chức năng của các nhân vật quý tộc và bắt bài đối phương để trở thành người trụ lại cuối cùng.
+        </p>
+        <div class="card-footer">
+          <a href="https://coup-online.pnk.workers.dev/" class="play-btn">
+            <span>Chơi ngay</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/KennyPhan123/coup-online" target="_blank" rel="noopener noreferrer" class="repo-btn" title="Mã nguồn Coup Online trên GitHub" aria-label="Mã nguồn Coup Online trên GitHub">
+            <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- 2. DECRYPTO -->
+      <article class="game-card" data-game="decrypto" data-min="3" data-max="12">
+        <div class="card-top">
+          <div class="game-thumb">
+            <img src="./images/decrypto.png" alt="Decrypto Online" loading="lazy" />
+          </div>
+          <div class="card-heading">
+            <h2 class="game-name">Decrypto</h2>
+            <div class="meta-badges">
+              <span class="badge badge-players">3–8+ người</span>
+              <span class="badge badge-tag">Giải mã · Đồng đội</span>
+            </div>
+          </div>
+        </div>
+        <p class="game-desc">
+          Truyền mật mã 3 chữ số cho đồng đội thông qua các từ gợi ý thật tinh tế mà không để đội đối phương nghe lén và chặn sóng.
+        </p>
+        <div class="card-footer">
+          <a href="https://decrypto.pnk.workers.dev/" class="play-btn">
+            <span>Chơi ngay</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/KennyPhan123/decrypto-online" target="_blank" rel="noopener noreferrer" class="repo-btn" title="Mã nguồn Decrypto Online trên GitHub" aria-label="Mã nguồn Decrypto Online trên GitHub">
+            <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- 3. SKULL -->
+      <article class="game-card" data-game="skull" data-min="3" data-max="6">
+        <div class="card-top">
+          <div class="game-thumb">
+            <img src="./images/skull.png" alt="Skull Online" loading="lazy" />
+          </div>
+          <div class="card-heading">
+            <h2 class="game-name">Skull</h2>
+            <div class="meta-badges">
+              <span class="badge badge-players">3–6 người</span>
+              <span class="badge badge-tag">Đặt cược · Thách thức</span>
+            </div>
+          </div>
+        </div>
+        <p class="game-desc">
+          Úp đĩa Hoa hoặc Đầu lâu xuống bàn, tố số lượng Hoa bạn dám lật và đấu trí cân não xem ai đang gài bẫy Đầu lâu.
+        </p>
+        <div class="card-footer">
+          <a href="https://skull-online.pnk.workers.dev/" class="play-btn">
+            <span>Chơi ngay</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/KennyPhan123/skull-online" target="_blank" rel="noopener noreferrer" class="repo-btn" title="Mã nguồn Skull Online trên GitHub" aria-label="Mã nguồn Skull Online trên GitHub">
+            <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- 4. SPICY -->
+      <article class="game-card" data-game="spicy" data-min="2" data-max="6">
+        <div class="card-top">
+          <div class="game-thumb">
+            <img src="./images/spicy.png" alt="Spicy Online" loading="lazy" />
+          </div>
+          <div class="card-heading">
+            <h2 class="game-name">Spicy</h2>
+            <div class="meta-badges">
+              <span class="badge badge-players">2–6 người</span>
+              <span class="badge badge-tag">Đánh bài · Bắt bài</span>
+            </div>
+          </div>
+        </div>
+        <p class="game-desc">
+          Đánh bài úp theo thứ tự số lớn dần cùng loại gia vị (Ớt, Tiêu, Wasabi) — nói thật hay nói dối một nửa để lừa cả bàn!
+        </p>
+        <div class="card-footer">
+          <a href="https://spicy-online.pnk.workers.dev/" class="play-btn">
+            <span>Chơi ngay</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/KennyPhan123/spicy-online" target="_blank" rel="noopener noreferrer" class="repo-btn" title="Mã nguồn Spicy Online trên GitHub" aria-label="Mã nguồn Spicy Online trên GitHub">
+            <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- 5. THAT'S NOT A HAT -->
+      <article class="game-card" data-game="thats-not-a-hat" data-min="2" data-max="8">
+        <div class="card-top">
+          <div class="game-thumb">
+            <img src="./images/thats-not-a-hat.png" alt="That's Not a Hat! Online" loading="lazy" />
+          </div>
+          <div class="card-heading">
+            <h2 class="game-name">That's Not a Hat!</h2>
+            <div class="meta-badges">
+              <span class="badge badge-players">2–8 người</span>
+              <span class="badge badge-tag">Trí nhớ · Tặng quà</span>
+            </div>
+          </div>
+        </div>
+        <p class="game-desc">
+          Ghi nhớ món đồ trên các lá bài úp rồi chuyển qua lại cho nhau — hoặc tự tin bịa tên món quà khi bạn đã lỡ quên sạch!
+        </p>
+        <div class="card-footer">
+          <a href="https://thats-not-a-hat-online.pnk.workers.dev/" class="play-btn">
+            <span>Chơi ngay</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/KennyPhan123/thats-not-a-hat-online" target="_blank" rel="noopener noreferrer" class="repo-btn" title="Mã nguồn That's Not a Hat Online trên GitHub" aria-label="Mã nguồn That's Not a Hat Online trên GitHub">
+            <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.46-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <footer class="hub-footer">
+      Tất cả các game đều miễn phí, chơi trực tiếp trên trình duyệt không cần đăng nhập.
+    </footer>
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const moonIcon = document.getElementById('moonIcon');
+    const sunIcon = document.getElementById('sunIcon');
+
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        moonIcon.style.display = 'none';
+        sunIcon.style.display = 'block';
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        moonIcon.style.display = 'block';
+        sunIcon.style.display = 'none';
+      }
+    }
+
+    const savedTheme = localStorage.getItem('hub-theme') || 'light';
+    applyTheme(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      const next = isDark ? 'light' : 'dark';
+      localStorage.setItem('hub-theme', next);
+      applyTheme(next);
+    });
+
+    // Player count filter
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.game-card');
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        cards.forEach((card) => {
+          const min = Number(card.dataset.min);
+          const max = Number(card.dataset.max);
+          let match = true;
+
+          if (filter === '2') {
+            match = min <= 2 && max >= 2;
+          } else if (filter === '3-6') {
+            match = min <= 6 && max >= 3;
+          } else if (filter === '7+') {
+            match = max >= 7;
+          }
+
+          card.classList.toggle('hidden', !match);
+        });
+      });
+    });
+
+    // Click anywhere on card (except repo button) to open game
+    cards.forEach((card) => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('a')) return;
+        const playLink = card.querySelector('.play-btn');
+        if (playLink) {
+          window.location.href = playLink.href;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
